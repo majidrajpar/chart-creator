@@ -1,17 +1,40 @@
 ---
-
+import Base from '../layouts/Base.astro';
+import ChartCreator from '../components/ChartCreator.jsx';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base
+  title="Free Online Chart Maker — No Sign Up | QuickChartMaker"
+  description="Create beautiful bar charts, pie charts, line graphs and more in seconds. Free, no sign up, no watermark. Copy or screenshot your chart instantly."
+>
+  <div class="mb-8 text-center">
+    <h1 class="text-3xl font-black text-slate-900 mb-3">Free Online Chart Maker</h1>
+    <p class="text-slate-500 max-w-xl mx-auto text-sm leading-relaxed">
+      Pick a chart type, enter your data, choose a colour theme — your chart is ready in seconds.
+      No account, no watermark, completely free.
+    </p>
+  </div>
+
+  <ChartCreator client:load />
+
+  <div class="mt-14 prose prose-slate max-w-none">
+    <h2 class="text-xl font-black text-slate-800 mb-4">How to make a chart online — free</h2>
+    <p class="text-slate-600 text-sm leading-relaxed mb-3">
+      QuickChartMaker is a free browser-based chart creator. Choose from bar charts, horizontal bar charts,
+      line graphs, pie charts, and radar charts. Enter your data using the simple label and value fields,
+      pick a colour theme that matches your project, and your chart updates instantly as you type.
+    </p>
+    <p class="text-slate-600 text-sm leading-relaxed mb-3">
+      When your chart looks right, press <strong>Win+Shift+S</strong> on Windows or <strong>Cmd+Shift+4</strong> on Mac
+      to screenshot it directly. No download button needed — your chart is ready to paste into presentations,
+      social media posts, school projects, or anywhere else you need it.
+    </p>
+    <h3 class="text-base font-black text-slate-800 mt-6 mb-2">Who is this for?</h3>
+    <ul class="text-slate-600 text-sm leading-relaxed list-disc list-inside space-y-1">
+      <li>Students making school or university presentations</li>
+      <li>Content creators who need quick data visuals for social media</li>
+      <li>Small business owners tracking sales or budgets</li>
+      <li>Anyone who needs a clean chart without learning Excel or Canva</li>
+    </ul>
+  </div>
+</Base>
