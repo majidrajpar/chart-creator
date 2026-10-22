@@ -2,6 +2,9 @@
   "name": "chart-creator",
   "type": "module",
   "version": "0.0.1",
+  "author": "Majid Mumtaz",
+  "license": "MIT",
+  "homepage": "https://majidrajpar.github.io/portfolio_my/chart-creator/",
   "engines": {
     "node": ">=22.12.0"
   },
