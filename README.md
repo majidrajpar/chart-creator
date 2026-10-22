@@ -1,43 +1,97 @@
-# Astro Starter Kit: Minimal
+# QuickChartMaker (Chart Creator)
 
-```sh
-npm create astro@latest -- --template minimal
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Framework: Astro](https://img.shields.io/badge/Framework-Astro-ff5d01.svg)](https://astro.build)
+[![UI: React](https://img.shields.io/badge/UI-React%2019-61dafb.svg)](https://react.dev)
+[![Charts: Recharts](https://img.shields.io/badge/Charts-Recharts-22b5bf.svg)](https://recharts.org)
+
+A lightweight, zero-install, browser-based charting utility designed for quick, beautiful data visualization without cumbersome spreadsheets or complex design software.
+
+All data remains 100% local in the client browser—no accounts, no trackers, and zero server uploads.
+
+---
+
+## ✨ Features
+
+- **5 Chart Types:**
+  - **Vertical Bar Chart:** Ideal for discrete categories and standard distributions.
+  - **Horizontal Bar Chart:** Perfect for longer category names and ranking lists.
+  - **Line Chart:** Best for trends, time series, and sequential data.
+  - **Pie / Donut Chart:** Visualizes proportional and share-of-wallet breakdowns.
+  - **Radar Chart:** Multi-variable capability and performance matrix comparisons.
+
+- **8 Handcrafted Colour Themes:**
+  - `Pastel`, `Vibrant`, `Dark`, `Sunset`, `Ocean`, `Navy`, `Gold`, and `Mixed`.
+
+- **Instant Pre-Built Templates:**
+  - One-click sample sets including *Budget Breakdown*, *Survey Results*, *Monthly Progress*, *Team Comparison*, and *Social Media Distribution*.
+
+- **Export & Capture:**
+  - Crisp vector SVG and raster PNG rendering with instant clipboard screenshot shortcuts (`Win+Shift+S` / `Cmd+Shift+4`).
+
+- **Zero-Install & Privacy-First:**
+  - Pure client-side execution; data is rendered in-memory and never sent over the wire.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Astro](https://astro.build/) (Static Site Generation & Islands Architecture)
+- **Component Engine:** [React 19](https://react.dev/)
+- **Data Visualization:** [Recharts](https://recharts.org/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js**: `>= 22.12.0`
+- **npm** (or `pnpm` / `yarn`)
+
+### Installation & Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/majidrajpar/chart-creator.git
+   cd chart-creator
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the local development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:4321
+   ```
+
+### Production Build
+
+To build the static site for production deployment:
+
+```bash
+npm run build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+To preview the production build locally:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📄 License
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is open-source and licensed under the [MIT License](LICENSE).
+Copyright (c) 2026 Majid Mumtaz.
